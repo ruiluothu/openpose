@@ -121,7 +121,6 @@ class Person:
             # return np.zeros((0,16))
 
 
-# def from_2d_to_3d(keypoints_data,Person().ratio,Person().torso_length,Person().keypoints_loc):
 def from_2d_to_3d(keypoints_data,focal_length=Person().focal_length,ratio=Person().ratio,torso_length=Person().torso_length):
     focal_lambda = focal_length
     list_3d = np.zeros((0, 14, 3))
